@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
-
+import { OnAddItem } from "../App";
 export interface ShoppingListFormProps {
-	onAddItem: (itemName: string, quantity: number) => void;
-	//! onAddItem FIRST DEFINITION
+	onAddItem: OnAddItem;
 }
 
 function ShoppingListForm({ onAddItem }: ShoppingListFormProps): JSX.Element {
