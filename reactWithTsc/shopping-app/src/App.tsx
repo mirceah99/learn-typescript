@@ -9,8 +9,8 @@ function App() {
 	// 	{ id: 1, productName: "Lemon", quantity: 3 },
 	// 	{ id: 2, productName: "Banana", quantity: 2 },
 	// ]
-	const addItem = function (productName: string, quantity: number) {
-		console.log(` you want to add this item: ${productName}`);
+	//! addItem SECOND DEFINITION
+	const onAddItem = function (productName: string, quantity: number) {
 		const newId = Math.floor(Math.random() * 10_000_000_000);
 		setItems([
 			...items,
@@ -20,7 +20,7 @@ function App() {
 	return (
 		<div>
 			<ShoppingList items={items} />
-			<ShoppingListForm onAddItem={addItem}></ShoppingListForm>
+			<ShoppingListForm onAddItem={onAddItem}></ShoppingListForm>
 		</div>
 	);
 }

@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 export interface ShoppingListFormProps {
 	onAddItem: (itemName: string, quantity: number) => void;
+	//! onAddItem FIRST DEFINITION
 }
 
 function ShoppingListForm({ onAddItem }: ShoppingListFormProps): JSX.Element {
